@@ -1,11 +1,15 @@
-import "./App.css";
+import './App.css';
 
-import LocationSample from "./LocationSample";
+import LocationSample from './LocationSample';
 
 function App() {
   return (
     <div className="App">
-      <LocationSample />
+      <header className="header">Header</header>
+      <main>
+        <LocationSample />
+      </main>
+      <footer className="footer">Footer</footer>
     </div>
   );
 }
