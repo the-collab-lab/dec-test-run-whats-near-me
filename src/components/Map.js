@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import GoogleMapReact from 'google-map-react';
 
-const API_KEY = 'AIzaSyA_jF-TPUl8qTMZ3BKFTrFOolH9wR7NOz4';
+const API_KEY = 'AIzaSyAs_fPF3j1pcQYUU2s0WMI27zhV7oe8kks';
 
 export function Map({ lat, lng }) {
   const [center, setCenter] = useState({ lat: 59.95, lng: 30.33 });
