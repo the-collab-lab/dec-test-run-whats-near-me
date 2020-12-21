@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect } from 'react';
 
 const useCurrentLocation = (options = {}) => {
   // store error messages in state
@@ -9,7 +9,7 @@ const useCurrentLocation = (options = {}) => {
   // Success handler for geolocation's `getCurrentPosition` method
   const handleSuccess = (position) => {
     const { latitude, longitude } = position.coords;
-    setLocation({ latitude, longitude });
+    setLocation({ lat: latitude, lng: longitude });
   };
 
   // Error handler for geolocation's `getCurrentPosition` method
@@ -22,14 +22,14 @@ const useCurrentLocation = (options = {}) => {
     // Do we want to prompt them to input a location if that's the case?
 
     if (!navigator.geolocation) {
-      setError("Geolocation is not supported");
+      setError('Geolocation is not supported');
     }
 
     // Call the Geolocation API
     navigator.geolocation.getCurrentPosition(
       handleSuccess,
       handleError,
-      options
+      options,
     );
   }, []);
   return { location, error };
