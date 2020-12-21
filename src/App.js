@@ -1,6 +1,8 @@
-import LocationSample from './LocationSample';
 import Header from './components/Header';
 import Footer from './components/Footer';
+import './App.css';
+
+import { Map } from './components/Map';
 
 function App() {
   return (
@@ -9,7 +11,7 @@ function App() {
         <h1>Header</h1>
       </Header>
       <main className="main">
-        <LocationSample />
+        <Map />
       </main>
       <Footer>
         <p>Footer</p>
