@@ -9,7 +9,7 @@ export function Map() {
   const { location, error } = useCurrentLocation();
   const [zoom, setZoom] = useState(11);
   return (
-    <div style={{ height: '100vh', width: '100%' }}>
+    <div style={{ height: '30vh', width: '100%' }}>
       {error && <p>Location Error: {error}</p>}
       {location && (
         <GoogleMapReact
