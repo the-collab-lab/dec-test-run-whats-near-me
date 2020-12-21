@@ -1,15 +1,17 @@
 import './App.css';
 
 import LocationSample from './LocationSample';
+import Header from './components/Header';
+import Footer from './components/Footer';
 
 function App() {
   return (
     <div className="App">
-      <header className="header">Header</header>
-      <main>
+      <Header>Header</Header>
+      <main className="main">
         <LocationSample />
       </main>
-      <footer className="footer">Footer</footer>
+      <Footer>Footer</Footer>
     </div>
   );
 }
