@@ -1,3 +1,9 @@
+/****** VARIABLES ******/
+:root {
+  --main-bg-color: #3e2e88;
+}
+
+/****** BASELINE ******/
 *,
 *::after,
 *::before {
@@ -35,7 +41,9 @@ h5 {
   font-size: 1.8rem;
 }
 
-p {
+span,
+p,
+a {
   font-size: 1.6rem;
 }
 
@@ -47,6 +55,37 @@ p {
   min-height: 66vh;
 }
 
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+/****** MAP STYLES ******/
+
+/****** FOOTER STYLES ******/
+
 .footer {
   min-height: 33vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar {
+  width: 100%;
+}
+
+.navbar__list {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+}
+
+.navbar__list-item {
+  padding: 1rem;
 }
