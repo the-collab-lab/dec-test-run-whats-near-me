@@ -1,3 +1,5 @@
+import Header from './components/Header';
+import Footer from './components/Footer';
 import './App.css';
 
 import { Map } from './components/Map';
@@ -5,7 +7,15 @@ import { Map } from './components/Map';
 function App() {
   return (
     <div className="App">
-      <Map />
+      <Header>
+        <h1>Header</h1>
+      </Header>
+      <main className="main">
+        <Map />
+      </main>
+      <Footer>
+        <p>Footer</p>
+      </Footer>
     </div>
   );
 }

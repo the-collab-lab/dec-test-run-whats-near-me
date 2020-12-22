@@ -1,14 +1,14 @@
-import React from "react";
-import { useCurrentLocation } from "./lib/userLocation";
+import React from 'react';
+import { useCurrentLocation } from './lib/userLocation';
 
 const LocationSample = () => {
   const { location, error } = useCurrentLocation();
   return (
     <div>
       {location ? (
-        <code>
+        <p>
           Latitude: {location.latitude}, Longitude: {location.longitude}
-        </code>
+        </p>
       ) : (
         <p>Loading...</p>
       )}
