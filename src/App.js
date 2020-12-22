@@ -1,6 +1,6 @@
 import Header from './components/Header';
 import Footer from './components/Footer';
-import './App.css';
+import Navbar from './components/Navbar';
 
 import { Map } from './components/Map';
 
@@ -14,7 +14,7 @@ function App() {
         <Map />
       </main>
       <Footer>
-        <p>Footer</p>
+        <Navbar />
       </Footer>
     </div>
   );
